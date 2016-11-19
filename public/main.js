@@ -1,11 +1,15 @@
 var name = prompt('Please enter your name');
 var socket = io();
+var width = $(window).width();
 socket.emit('user name',name);
 var flag = 0;
 $('form').submit(function(){
   flag = 1;
   var sendmsg = $('#m').val();
-  $('#messages').append($('<li>').html(name+"(me): <br>"+sendmsg).css({"text-align": "left","margin": "5px 5px 5px 177px"}));
+  if(width > 767)
+      $('#messages').append($('<li>').html(name+"(me): <br>"+sendmsg).css({"text-align": "left","margin": "5px 5px 5px 177px"}));
+  else
+      $('#messages').append($('<li>').html(name+"(me): <br>"+sendmsg).css({"text-align": "left","margin": "5px 5px 5px 76px"}));
   socket.emit('chat message', name+" : "+$('#m').val());
   $('#m').val('');
   return false;
