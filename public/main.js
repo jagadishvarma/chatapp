@@ -18,7 +18,7 @@ socket.on('send message', function(msg){
 });
 socket.on('user name', function(uname) {
   if(uname == name){
-    $('#messages').append($('<li>').html("hi "+uname+"<br>"+"you are connected").css({"border" : "0","background" : "none"}));
+    $('#messages').append($('<li>').html("hi "+uname+"<br>"+"you are connected").css({"font-size" : "17px" ,"border" : "0","background" : "none"}));
   }
   else {
     $('#messages').append($('<li>').text(uname+" is connected").css({"border" : "0","background" : "none"}));
