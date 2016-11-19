@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>ChatAPP</title>
+  </head>
+  <body>
+    <div>
+      <center>
+      <button type="button" class="button online" data-toggle="collapse" data-target="#onlinepeople"></button>
+  <div id="onlinepeople" class="collapse">
+    <div class = "onlinepeople">
+    <tbody>
+      <tr>
+        <td>
+          <ul id="peopleon"></ul>
+        </td>
+      </tr>
+    </tbody>
+  </div>
+  </div>
+</center>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+      <div class = "col-sm-12">
+        <center>
+        <div class = "chatbox">
+        <p style="text-align:center; font-size: 35px";>Start your Chat</p>
+        <tbody>
+          <tr>
+            <td>
+              <ul id="messages" class = "bubble"></ul>
+            </td>
+          </tr>
+        </tbody>
+      </div>
+      <div class = "send">
+      <form action="">
+        <input id="m" autocomplete="off" required/>
+        <button>Send</button>
+      </form>
+    </div>
+  </center>
+      </div>
+      <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="main.js"></script>
+
+  </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+.chatbox {
+    margin: 4px 0 0 115px;
+    width: 28.3%;
+    height: 630px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background: #7FFFD4;
+    text-align: justify;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+.onlinepeople{
+
+  width: 28.3%;
+  height: 635px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background: #FFF;
+  text-align: justify;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-left: 7%;
+
+}
+.send {
+    width: 30%;
+    margin-left: 117px;
+    margin-top: 3px;
+  }
+
+  body { font: 13px Helvetica, Arial; background: beige; }
+  form input { padding: 10px; width: 74%; }
+  form button { width: 20%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+  #messages {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      word-wrap: break-word;
+  }
+  #messages li {
+      padding: 15px 10px;
+      font-size: 25px;
+  }
+  #peopleon li {
+      font-size: 30px;
+      color: orange;
+  }
+
+  tbody {
+      height: 200px;
+      display: inline-block;
+      width: 100%;
+
+  }
+
+
+.bubble li {
+  display: block;
+  margin: 0 auto 40px auto;
+  width: 250px;
+  background-color: White;
+  border: solid 6px #143463;
+  border-radius: 20px;
+  text-align: left;
+  position: relative;
+}
+.bubble li {
+  margin: 10px;
+  font-size: 11px;
+  color: #143463;
+}
+.bubble:before li, .bubble:after li {
+  border-color: White transparent transparent transparent;
+  border-style: solid;
+  border-width: 20px 0px 0px 40px;
+  content: &quot;&quot;;
+  display: block;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  position: absolute;
+  z-index: 5;
+  bottom: -20px;
+  left: 150px;
+}
+.bubble:after li {
+  border-color: #143463 transparent transparent transparent;
+  border-style: solid;
+  border-width: 24px 0px 0px 48px;
+  content: &quot;&quot;;
+  z-index: 4;
+  bottom: -30px;
+  left: 148px;
+}
+button.online{
+  font-size: 34px;
+  margin: 62px 0 0 152px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
